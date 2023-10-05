@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(pexels-andrea-piacquadio-935743.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+nav{
+    background-color:skyblue;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+nav li{
+    display: inline;
+    margin: 0 8px;
+    padding: 10px;
+    margin-right: 40px;
+  
+}
+nav a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 36px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+
+nav li a:hover{
+    color: black;
+}
+.menuline{
+height: 3px;
+width: 20px;
+background-color: brown;
+margin-bottom: 3px;
+
+}
+#menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:720px) {
+           nav{
+            flex-direction: column;
+           } 
+           nav li{
+            display: block;
+            padding: 10px 0;
+           }
+        ul{
+            text-align: center;
+            display: none;
+        }
+        .logo{
+            
+            display: flex;
+        }
+        
+        
+        #menu{
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    
+     
+        .showmenu{
+            display: block;
+            transition: 4s;
+            transform: scale(1.2);
+            -webkit-transition: 4s;
+            -moz-transition: 4s;
+            -ms-transition: 4s;
+            -o-transition: 4s;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+}
+        }
+
